@@ -1,0 +1,14 @@
+body { background: #f4f6f9; }
+.sidebar { min-height: calc(100vh - 56px - 56px); background: #fff; border-right: 1px solid #dee2e6; }
+/*min-height: que el menú ocupe casi toda la altura de la pantalla. 100vh es el alto total de la ventana, y restamos 56px del navbar de arriba y 56px del footer de abajo.
+background: #fff: fondo blanco.
+border-right: 1px solid #dee2e6: una línea gris finita a la derecha, que separa el menú del contenido.*/
+.sidebar .list-group-item.active { background: #0d6efd; border-color: #0d6efd; }
+/*Cambia el botón de la sección elegida. Dentro del sidebar, los elementos list-group-item que tienen la clase active se pintan de azul (#0d6efd), tanto el fondo como el borde.*/
+.content-area { min-height: calc(100vh - 56px - 56px); }
+/*Lo mismo que el sidebar, pero para el área central (main). Así las dos columnas tienen igual altura y no queda un hueco blanco abajo.*/
+footer { height: 56px; }
+.table-actions .btn { padding: .15rem .45rem; font-size: .8rem; }
+/*.table-actions: la clase de la celda donde están esos botones.
+padding: reduce el espacio interno del botón.
+font-size: achica la letra.*/
